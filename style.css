@@ -56,19 +56,17 @@ body{
 }
 .content div{
     display: none;
-    transform-origin: left;
-    animation: slide .8s linear;
+    
 
 }
 
-@keyframes slide {
-     0%{
-        
-     }
-}
+
 
 .content .active{
     display: block;
+    transform-origin: left;
+    animation: slide .9s linear;
+    transition: all ease-in;
 }
 
 .content h4{
@@ -80,4 +78,12 @@ body{
     line-height: 1.9;
     letter-spacing: .1rem;
     word-spacing: .2rem;
+}
+
+@keyframes slide {
+    0%{
+       position: absolute;
+       left: 0%;
+    }
+
 }
