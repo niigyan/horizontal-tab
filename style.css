@@ -56,6 +56,15 @@ body{
 }
 .content div{
     display: none;
+    transform-origin: left;
+    animation: slide .8s linear;
+
+}
+
+@keyframes slide {
+     0%{
+        
+     }
 }
 
 .content .active{
